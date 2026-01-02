@@ -25,6 +25,13 @@ There have been several testnets so far:
 
 ## Quick Start
 
+### Minimum Hardware Requirement
+
+- A linux server with Ubuntu 22+ OS (vps or WSL)
+- 4 core CPU
+- 4 GB Rams
+- 50 GB of storage
+
 ### Installation
 
 #### Install Prequisites
