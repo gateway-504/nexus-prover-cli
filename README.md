@@ -30,17 +30,17 @@ There have been several testnets so far:
 #### Install Prequisites
 
 ```
-apt update
-apt upgrade -y
+sudo apt update
+sudo apt upgrade -y
 sudo apt install tmux build-essential pkg-config libssl-dev -y
 ```
 
 ```
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+sudo curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 
 ```
-rustup target add riscv32i-unknown-none-elf
+sudo rustup target add riscv32i-unknown-none-elf
 ```
 
 #### Precompiled Binary (Recommended)
@@ -56,7 +56,7 @@ tmux new -s nexus
 Downloads the latest binary
  
 ```bash
-curl https://cli.nexus.xyz/ | sh
+sudo curl https://cli.nexus.xyz/ | sh
 ```
 
 Run the node
