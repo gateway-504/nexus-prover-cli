@@ -66,8 +66,6 @@ Downloads the latest binary
 sudo curl https://cli.nexus.xyz/ | sh
 
 source $HOME/.cargo/env
-export PATH="$HOME/.cargo/bin:$PATH"
-
 ```
 
 Run the node
