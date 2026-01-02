@@ -57,12 +57,16 @@ Downloads the latest binary
  
 ```bash
 sudo curl https://cli.nexus.xyz/ | sh
+
+source $HOME/.cargo/env
+export PATH="$HOME/.cargo/bin:$PATH"
+
 ```
 
 Run the node
 
 ```
-nexus-cli start --node-id <your-node-id>
+nexus-network start --node-id <your-node-id>
 ```
 
 Press ctrl b+d to detach tmux
