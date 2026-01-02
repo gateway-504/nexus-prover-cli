@@ -27,15 +27,47 @@ There have been several testnets so far:
 
 ### Installation
 
+#### Install Prequisites
+
+```
+apt update
+apt upgrade -y
+sudo apt install tmux build-essential pkg-config libssl-dev -y
+```
+
+```
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+```
+rustup target add riscv32i-unknown-none-elf
+```
+
 #### Precompiled Binary (Recommended)
 
 For the simplest and most reliable installation:
 
+Run in background using tmux
+
+```
+tmux new -s nexus
+```
+
+Downloads the latest binary
+ 
 ```bash
 curl https://cli.nexus.xyz/ | sh
 ```
 
-This downloads the latest binary, prompts for Terms of Use acceptance, and starts interactive mode.
+Run the node
+
+```
+nexus-cli start --node-id <your-node-id>
+```
+
+Press ctrl b+d to detach tmux
+
+
 
 #### Non-Interactive Installation
 
